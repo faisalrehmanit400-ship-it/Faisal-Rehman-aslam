@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seller Center | AcousticLab Tokyo | OmniTrade</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Cabinet+Grotesk:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="top-strip">
+    <div class="container top-strip-inner">
+      <div class="strip-left">
+        <a href="../index.html" style="color:var(--text-secondary);">← Marketplace Storefront</a>
+        <span aria-hidden="true">·</span>
+        <span style="color:var(--accent-emerald);">● Merchant Gateway Online</span>
+      </div>
+      <div class="strip-right">
+        <span>Vendor ID: #sel_01 (Shibuya, Tokyo)</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="header-main">
+    <div class="container header-container">
+      <a href="../index.html" class="brand-wordmark">
+        OmniTrade<span class="brand-dot">.</span>
+        <span style="font-size:13px; font-weight:500; color:var(--text-muted); margin-left:6px;">Seller Portal</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#metrics" class="nav-link active">Overview</a>
+        <a href="#inventory" class="nav-link">Inventory</a>
+        <a href="#orders" class="nav-link">Fulfillments</a>
+        <a href="../index.html" class="nav-link">Storefront View</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="btn-seller-new-prod" class="btn-primary" style="font-size:12px; padding:8px 14px;">
+          + New Listing
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top:36px; padding-bottom:60px;">
+    <!-- Seller Header Overview -->
+    <div style="background:var(--bg-surface); border:1px solid var(--border-hairline); border-radius:12px; padding:24px; margin-bottom:32px; display:flex; justify-content:space-between; align-items:center;">
+      <div>
+        <div style="font-size:11px; text-transform:uppercase; color:var(--accent-primary); font-weight:600; margin-bottom:4px;">Verified Japanese Master Craft Workshop</div>
+        <h1 style="font-family:var(--font-display); font-size:24px; font-weight:800;">AcousticLab Tokyo</h1>
+        <p style="font-size:13px; color:var(--text-secondary); margin-top:4px;">Registered Business: JP-90182411 · Operating since 2018 · Marketplace commission: 8.5%</p>
+      </div>
+      <div style="text-align:right;">
+        <div style="font-size:12px; color:var(--text-muted);">Vendor Rating</div>
+        <div style="font-size:24px; font-weight:700; color:#fbbf24;" class="tabular-nums">★ 4.96 <span style="font-size:12px; color:var(--text-secondary);">(428 reviews)</span></div>
+      </div>
+    </div>
+
+    <!-- Metrics Cards -->
+    <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:16px; margin-bottom:36px;" id="metrics">
+      <div style="background:var(--bg-surface); border:1px solid var(--border-hairline); border-radius:10px; padding:20px;">
+        <div style="font-size:12px; color:var(--text-muted);">Total Gross Volume</div>
+        <div style="font-size:26px; font-weight:800; color:var(--text-accent); margin-top:8px;" class="tabular-nums">$148,200</div>
+        <div style="font-size:11px; color:var(--accent-emerald); margin-top:4px;">+18.4% vs last quarter</div>
+      </div>
+
+      <div style="background:var(--bg-surface); border:1px solid var(--border-hairline); border-radius:10px; padding:20px;">
+        <div style="font-size:12px; color:var(--text-muted);">Cross-Border Orders</div>
+        <div style="font-size:26px; font-weight:800; color:var(--text-accent); margin-top:8px;" class="tabular-nums">1,420</div>
+        <div style="font-size:11px; color:var(--text-secondary); margin-top:4px;">99.8% on-time dispatch</div>
+      </div>
+
+      <div style="background:var(--bg-surface); border:1px solid var(--border-hairline); border-radius:10px; padding:20px;">
+        <div style="font-size:12px; color:var(--text-muted);">Active Catalog SKUs</div>
+        <div style="font-size:26px; font-weight:800; color:var(--text-accent); margin-top:8px;" class="tabular-nums">8</div>
+        <div style="font-size:11px; color:var(--text-secondary); margin-top:4px;">2 Low Stock Alerts</div>
+      </div>
+
+      <div style="background:var(--bg-surface); border:1px solid var(--border-hairline); border-radius:10px; padding:20px;">
+        <div style="font-size:12px; color:var(--text-muted);">Net Payout Ready</div>
+        <div style="font-size:26px; font-weight:800; color:var(--accent-primary); margin-top:8px;" class="tabular-nums">$12,410</div>
+        <div style="font-size:11px; color:var(--text-secondary); margin-top:4px;">Next transfer: Oct 1, 2026</div>
+      </div>
+    </div>
+
+    <!-- Inventory Table -->
+    <div style="background:var(--bg-surface); border:1px solid var(--border-hairline); border-radius:12px; overflow:hidden; margin-bottom:36px;" id="inventory">
+      <div style="padding:18px 24px; border-bottom:1px solid var(--border-hairline); display:flex; justify-content:space-between; align-items:center;">
+        <div>
+          <h2 style="font-family:var(--font-display); font-size:18px; font-weight:700;">Catalog & Inventory Manager</h2>
+          <p style="font-size:12px; color:var(--text-muted);">Real-time multi-currency pricing and stock thresholds</p>
+        </div>
+      </div>
+
+      <div style="overflow-x:auto;">
+        <table style="width:100%; border-collapse:collapse; font-size:13px; text-align:left;">
+          <thead>
+            <tr style="border-bottom:1px solid var(--border-hairline); color:var(--text-muted); font-size:11px; text-transform:uppercase;">
+              <th style="padding:14px 24px;">Product</th>
+              <th style="padding:14px 16px;">SKU</th>
+              <th style="padding:14px 16px;">Category</th>
+              <th style="padding:14px 16px;">Price</th>
+              <th style="padding:14px 16px;">Stock</th>
+              <th style="padding:14px 16px;">Status</th>
+              <th style="padding:14px 24px; text-align:right;">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="seller-product-table-body">
+            <tr style="border-bottom:1px solid var(--border-hairline);">
+              <td style="padding:14px 24px; display:flex; align-items:center; gap:12px;">
+                <img src="../assets/images/headphones.jpg" style="width:40px; height:40px; border-radius:6px; object-fit:cover;" />
+                <div>
+                  <div style="font-weight:600;">AcousticLab Studio Master H1</div>
+                  <div style="font-size:11px; color:var(--text-muted);">45mm Planar Magnetic</div>
+                </div>
+              </td>
+              <td style="padding:14px 16px;" class="tabular-nums">ACL-H1-BLK</td>
+              <td style="padding:14px 16px;">Electronics & Audio</td>
+              <td style="padding:14px 16px;" class="tabular-nums font-semibold">$389.00</td>
+              <td style="padding:14px 16px;" class="tabular-nums">48 units</td>
+              <td style="padding:14px 16px;"><span style="color:var(--accent-emerald);">Active</span></td>
+              <td style="padding:14px 24px; text-align:right;">
+                <button class="btn-secondary" style="padding:4px 8px; font-size:11px;">Edit</button>
+              </td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border-hairline);">
+              <td style="padding:14px 24px; display:flex; align-items:center; gap:12px;">
+                <img src="../assets/images/hero.jpg" style="width:40px; height:40px; border-radius:6px; object-fit:cover;" />
+                <div>
+                  <div style="font-weight:600;">AcousticLab Solid State Desktop DAC/Amp</div>
+                  <div style="font-size:11px; color:var(--text-muted);">Dual ESS Sabre ES9038Q2M</div>
+                </div>
+              </td>
+              <td style="padding:14px 16px;" class="tabular-nums">ACL-DAC-PRO</td>
+              <td style="padding:14px 16px;">Electronics & Audio</td>
+              <td style="padding:14px 16px;" class="tabular-nums font-semibold">$499.00</td>
+              <td style="padding:14px 16px;" class="tabular-nums">31 units</td>
+              <td style="padding:14px 16px;"><span style="color:var(--accent-emerald);">Active</span></td>
+              <td style="padding:14px 24px; text-align:right;">
+                <button class="btn-secondary" style="padding:4px 8px; font-size:11px;">Edit</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer-main">
+    <div class="container footer-bottom">
+      <div>© 2026 OmniTrade Multi-Vendor Seller Gateway</div>
+      <a href="../index.html">Back to Storefront</a>
+    </div>
+  </footer>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/store.js"></script>
+</body>
+</html>

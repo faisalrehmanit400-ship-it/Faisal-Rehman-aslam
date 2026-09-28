@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Governance Center | OmniTrade Marketplace</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Cabinet+Grotesk:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="top-strip">
+    <div class="container top-strip-inner">
+      <div class="strip-left">
+        <a href="../index.html" style="color:var(--text-secondary);">← Marketplace Storefront</a>
+        <span aria-hidden="true">·</span>
+        <span style="color:var(--accent-gold);">● Master Administrator Session</span>
+      </div>
+      <div class="strip-right">
+        <span>Elena Rostova (SuperAdmin)</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="header-main">
+    <div class="container header-container">
+      <a href="../index.html" class="brand-wordmark">
+        OmniTrade<span class="brand-dot">.</span>
+        <span style="font-size:13px; font-weight:500; color:var(--accent-gold); margin-left:6px;">Governance & Ops</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#metrics" class="nav-link active">Platform Health</a>
+        <a href="#sellers" class="nav-link">Vendor Audits</a>
+        <a href="#orders" class="nav-link">Cross-Border Settlements</a>
+      </nav>
+
+      <div class="header-actions">
+        <span style="font-size:12px; color:var(--text-muted);">Currencies: USD · EUR · GBP · JPY · CAD</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top:36px; padding-bottom:60px;">
+    <div style="margin-bottom:28px;">
+      <h1 style="font-family:var(--font-display); font-size:26px; font-weight:800;">Platform Operations & Multi-Vendor Control</h1>
+      <p style="font-size:13px; color:var(--text-muted); margin-top:4px;">Cross-border dispute arbitration, commission fees (8.5%), and vendor verification</p>
+    </div>
+
+    <!-- Admin KPI Metrics -->
+    <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:16px; margin-bottom:36px;" id="metrics">
+      <div style="background:var(--bg-surface); border:1px solid var(--border-hairline); border-radius:10px; padding:20px;">
+        <div style="font-size:12px; color:var(--text-muted);">Gross Merchandise Volume (GMV)</div>
+        <div style="font-size:26px; font-weight:800; color:var(--text-accent); margin-top:8px;" class="tabular-nums">$526,900</div>
+        <div style="font-size:11px; color:var(--accent-emerald); margin-top:4px;">Platform Commission: $44,786 (8.5%)</div>
+      </div>
+
+      <div style="background:var(--bg-surface); border:1px solid var(--border-hairline); border-radius:10px; padding:20px;">
+        <div style="font-size:12px; color:var(--text-muted);">Verified Global Sellers</div>
+        <div style="font-size:26px; font-weight:800; color:var(--text-accent); margin-top:8px;" class="tabular-nums">3 Verified</div>
+        <div style="font-size:11px; color:var(--text-secondary); margin-top:4px;">0 Pending Audits</div>
+      </div>
+
+      <div style="background:var(--bg-surface); border:1px solid var(--border-hairline); border-radius:10px; padding:20px;">
+        <div style="font-size:12px; color:var(--text-muted);">Total Platform Orders</div>
+        <div style="font-size:26px; font-weight:800; color:var(--text-accent); margin-top:8px;" class="tabular-nums">5,110</div>
+        <div style="font-size:11px; color:var(--text-secondary); margin-top:4px;">Dispute rate: 0.04%</div>
+      </div>
+
+      <div style="background:var(--bg-surface); border:1px solid var(--border-hairline); border-radius:10px; padding:20px;">
+        <div style="font-size:12px; color:var(--text-muted);">System Health</div>
+        <div style="font-size:26px; font-weight:800; color:var(--accent-emerald); margin-top:8px;">100%</div>
+        <div style="font-size:11px; color:var(--text-secondary); margin-top:4px;">Escrow nodes synchronized</div>
+      </div>
+    </div>
+
+    <!-- Verified Sellers Table -->
+    <div style="background:var(--bg-surface); border:1px solid var(--border-hairline); border-radius:12px; overflow:hidden;" id="sellers">
+      <div style="padding:18px 24px; border-bottom:1px solid var(--border-hairline);">
+        <h2 style="font-family:var(--font-display); font-size:18px; font-weight:700;">Registered International Vendors</h2>
+      </div>
+
+      <table style="width:100%; border-collapse:collapse; font-size:13px; text-align:left;">
+        <thead>
+          <tr style="border-bottom:1px solid var(--border-hairline); color:var(--text-muted); font-size:11px; text-transform:uppercase;">
+            <th style="padding:14px 24px;">Store Name</th>
+            <th style="padding:14px 16px;">Jurisdiction</th>
+            <th style="padding:14px 16px;">Total GMV</th>
+            <th style="padding:14px 16px;">Rating</th>
+            <th style="padding:14px 16px;">Status</th>
+            <th style="padding:14px 24px; text-align:right;">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border-hairline);">
+            <td style="padding:14px 24px; font-weight:600;">AcousticLab Tokyo</td>
+            <td style="padding:14px 16px;">Japan (JP-90182411)</td>
+            <td style="padding:14px 16px;" class="tabular-nums font-semibold">$148,200</td>
+            <td style="padding:14px 16px; color:#fbbf24;" class="tabular-nums">★ 4.96</td>
+            <td style="padding:14px 16px; color:var(--accent-emerald);">Verified Merchant</td>
+            <td style="padding:14px 24px; text-align:right;">
+              <button class="btn-secondary" style="padding:4px 8px; font-size:11px;">Audit Log</button>
+            </td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border-hairline);">
+            <td style="padding:14px 24px; font-weight:600;">Kronos Werkstatt</td>
+            <td style="padding:14px 16px;">Germany (DE-HRB88201)</td>
+            <td style="padding:14px 16px;" class="tabular-nums font-semibold">$289,400</td>
+            <td style="padding:14px 16px; color:#fbbf24;" class="tabular-nums">★ 4.92</td>
+            <td style="padding:14px 16px; color:var(--accent-emerald);">Verified Merchant</td>
+            <td style="padding:14px 24px; text-align:right;">
+              <button class="btn-secondary" style="padding:4px 8px; font-size:11px;">Audit Log</button>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:14px 24px; font-weight:600;">Atelier Botanica Paris</td>
+            <td style="padding:14px 16px;">France (FR-RCS402199)</td>
+            <td style="padding:14px 16px;" class="tabular-nums font-semibold">$89,300</td>
+            <td style="padding:14px 16px; color:#fbbf24;" class="tabular-nums">★ 4.88</td>
+            <td style="padding:14px 16px; color:var(--accent-emerald);">Verified Merchant</td>
+            <td style="padding:14px 24px; text-align:right;">
+              <button class="btn-secondary" style="padding:4px 8px; font-size:11px;">Audit Log</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="footer-main">
+    <div class="container footer-bottom">
+      <div>© 2026 OmniTrade Governance & Ops Center</div>
+      <a href="../index.html">Back to Storefront</a>
+    </div>
+  </footer>
+</body>
+</html>

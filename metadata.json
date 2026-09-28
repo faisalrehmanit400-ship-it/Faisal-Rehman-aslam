@@ -1,0 +1,6 @@
+{
+  "name": "OmniTrade Global Marketplace",
+  "description": "Enterprise-grade international multi-vendor e-commerce marketplace featuring seamless buyer storefronts, seller portal, admin center, multi-currency checkout, and Live Server compatibility.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

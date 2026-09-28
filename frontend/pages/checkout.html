@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cross-Border Checkout | OmniTrade Global</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Cabinet+Grotesk:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="top-strip">
+    <div class="container top-strip-inner">
+      <div class="strip-left">
+        <a href="./cart.html" style="color:var(--text-secondary);">← Return to Shopping Bag</a>
+      </div>
+      <div class="strip-right">
+        <span>256-Bit SSL Encrypted Escrow Checkout</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="header-main">
+    <div class="container header-container">
+      <a href="../index.html" class="brand-wordmark">
+        OmniTrade<span class="brand-dot">.</span>
+        <span style="font-size:13px; font-weight:500; color:var(--text-muted); margin-left:6px;">Direct Checkout</span>
+      </a>
+      <div style="font-size:12px; color:var(--text-muted);">
+        Safe Mock Payment Simulation
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top:40px; padding-bottom:60px;">
+    <div style="max-width:860px; margin:0 auto; display:grid; grid-template-columns:1.8fr 1.2fr; gap:32px;">
+      <!-- Checkout Form -->
+      <div style="background:var(--bg-surface); border:1px solid var(--border-hairline); border-radius:12px; padding:28px;">
+        <h2 style="font-family:var(--font-display); font-size:20px; font-weight:700; margin-bottom:18px;">Shipping & Recipient Details</h2>
+
+        <form id="standalone-checkout-form" style="display:flex; flex-direction:column; gap:14px;">
+          <div>
+            <label style="display:block; font-size:12px; font-weight:600; color:var(--text-secondary); margin-bottom:4px;">Recipient Full Name</label>
+            <input type="text" id="chk-name" required value="Marcus Vance" style="width:100%; background:var(--bg-canvas); border:1px solid var(--border-hairline); border-radius:6px; padding:8px 12px;" />
+          </div>
+
+          <div>
+            <label style="display:block; font-size:12px; font-weight:600; color:var(--text-secondary); margin-bottom:4px;">Email (For customs clearance notifications)</label>
+            <input type="email" id="chk-email" required value="marcus.buyer@example.com" style="width:100%; background:var(--bg-canvas); border:1px solid var(--border-hairline); border-radius:6px; padding:8px 12px;" />
+          </div>
+
+          <div>
+            <label style="display:block; font-size:12px; font-weight:600; color:var(--text-secondary); margin-bottom:4px;">Delivery Address</label>
+            <input type="text" id="chk-address" required value="742 Evergreen Terrace" style="width:100%; background:var(--bg-canvas); border:1px solid var(--border-hairline); border-radius:6px; padding:8px 12px;" />
+          </div>
+
+          <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px;">
+            <div>
+              <label style="display:block; font-size:11px; color:var(--text-secondary); margin-bottom:4px;">City</label>
+              <input type="text" id="chk-city" required value="Seattle" style="width:100%; background:var(--bg-canvas); border:1px solid var(--border-hairline); border-radius:6px; padding:8px 10px;" />
+            </div>
+            <div>
+              <label style="display:block; font-size:11px; color:var(--text-secondary); margin-bottom:4px;">Country</label>
+              <select id="chk-country" style="width:100%; background:var(--bg-canvas); border:1px solid var(--border-hairline); border-radius:6px; padding:8px 6px;">
+                <option value="USA">United States</option>
+                <option value="GBR">United Kingdom</option>
+                <option value="DEU">Germany</option>
+                <option value="FRA">France</option>
+                <option value="JPN">Japan</option>
+              </select>
+            </div>
+            <div>
+              <label style="display:block; font-size:11px; color:var(--text-secondary); margin-bottom:4px;">Zip Code</label>
+              <input type="text" id="chk-zip" required value="98101" style="width:100%; background:var(--bg-canvas); border:1px solid var(--border-hairline); border-radius:6px; padding:8px 10px;" />
+            </div>
+          </div>
+
+          <div style="margin-top:12px;">
+            <label style="display:block; font-size:12px; font-weight:600; color:var(--text-secondary); margin-bottom:8px;">Payment Selection (Safe Sandbox)</label>
+            <div style="display:flex; flex-direction:column; gap:6px;">
+              <label style="display:flex; align-items:center; gap:8px; padding:8px 12px; background:var(--bg-canvas); border:1px solid var(--border-hairline); border-radius:6px;">
+                <input type="radio" name="pay_option" value="cc" checked />
+                <span style="font-size:12px;">Credit / Debit Card (Universal Multi-Currency)</span>
+              </label>
+              <label style="display:flex; align-items:center; gap:8px; padding:8px 12px; background:var(--bg-canvas); border:1px solid var(--border-hairline); border-radius:6px;">
+                <input type="radio" name="pay_option" value="paypal" />
+                <span style="font-size:12px;">PayPal International</span>
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width:100%; justify-content:center; margin-top:16px;">
+            Authorize & Submit Order
+          </button>
+        </form>
+      </div>
+
+      <!-- Order Summary Card -->
+      <div style="background:var(--bg-surface); border:1px solid var(--border-hairline); border-radius:12px; padding:24px; height:fit-content;">
+        <h3 style="font-family:var(--font-display); font-size:16px; font-weight:700; margin-bottom:14px;">Summary</h3>
+        <div id="checkout-summary-lines" style="display:flex; flex-direction:column; gap:8px; font-size:13px; color:var(--text-secondary);">
+          <!-- Populated by script -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer-main">
+    <div class="container footer-bottom">
+      <div>© 2026 OmniTrade Global Marketplace Inc.</div>
+      <a href="../index.html">Back to Home</a>
+    </div>
+  </footer>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/store.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const store = window.store;
+      const totals = store.getCartTotals();
+      const lines = document.getElementById('checkout-summary-lines');
+
+      if (lines) {
+        lines.innerHTML = `
+          <div class="summary-row"><span>Items (${totals.itemsCount}):</span><span class="tabular-nums">${store.formatPrice(totals.subtotal)}</span></div>
+          <div class="summary-row"><span>Priority Air Shipping:</span><span class="tabular-nums">${totals.shipping === 0 ? 'FREE' : store.formatPrice(totals.shipping)}</span></div>
+          <div class="summary-row"><span>Import VAT/Duty:</span><span class="tabular-nums">${store.formatPrice(totals.tax)}</span></div>
+          <div class="summary-row total" style="padding-top:10px; margin-top:8px; border-top:1px solid var(--border-hairline); font-weight:700; color:var(--text-accent);">
+            <span>Total:</span>
+            <span class="tabular-nums">${store.formatPrice(totals.total)}</span>
+          </div>
+        `;
+      }
+
+      document.getElementById('standalone-checkout-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const order = store.placeOrder({
+          recipientName: document.getElementById('chk-name').value,
+          email: document.getElementById('chk-email').value,
+          streetAddress: document.getElementById('chk-address').value,
+          city: document.getElementById('chk-city').value,
+          country: document.getElementById('chk-country').value,
+          postalCode: document.getElementById('chk-zip').value
+        }, 'credit_card');
+
+        alert(`Order ${order.order_number} confirmed! Redirecting to tracking...`);
+        window.location.href = './orders.html';
+      });
+    });
+  </script>
+</body>
+</html>
